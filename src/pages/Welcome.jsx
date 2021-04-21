@@ -49,7 +49,6 @@ const styles = StyleSheet.create({
     color: colors.heading,
   },
   image: {
-    width: 292,
     height: Dimensions.get("window").width * 0.7,
   },
   button: {
