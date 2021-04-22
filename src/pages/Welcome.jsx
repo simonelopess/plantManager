@@ -10,6 +10,7 @@ import {
 
 import wateringImg from "../assets/watering.png";
 import colors from "../styles/colors";
+import { Feather } from "@expo/vector-icons";
 
 export function Welcome() {
   return (
@@ -23,7 +24,9 @@ export function Welcome() {
         sempre que precisar.
       </Text>
       <TouchableOpacity style={styles.button} activeOpacity={0.8}>
-        <Text style={styles.buttonText}>></Text>
+        <Text style={styles.buttonText}>
+          <Feather name="chevron-right" style={styles.buttonIcon} />
+        </Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
@@ -60,8 +63,8 @@ const styles = StyleSheet.create({
     height: 56,
     width: 56,
   },
-  buttonText: {
-    color: colors.white,
+  buttonIcon: {
     fontSize: 24,
+    color: colors.white,
   },
 });
