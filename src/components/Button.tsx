@@ -1,14 +1,16 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet, TouchableOpacityProps } from 'react-native';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 
-
-export function Button(){
+interface ButtonsProps extends TouchableOpacityProps {
+    title: string, 
+}
+export function Button({title, ...rest} : ButtonsProps){
     return(
         <TouchableOpacity style={styles.container}>
-            <Text style={styles.text}>
-                Confirmar
+            <Text style={styles.text} {...rest}>
+                {title}
             </Text>
         </TouchableOpacity>
     )
