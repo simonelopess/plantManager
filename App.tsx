@@ -1,5 +1,5 @@
 import React from 'react';
-import { Confirmation } from './src/pages/Confirmation';
+import Routes from './src/routes';
 import { Text, View } from 'react-native';
 import AppLoading from 'expo-app-loading';
 
@@ -15,6 +15,6 @@ export default function App() {
    <AppLoading/>
   )
   return (
-    <Confirmation />
+    <Routes />
   )
 }
