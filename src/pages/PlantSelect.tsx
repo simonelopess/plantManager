@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
+import { EnviromentButton } from '../components/EnviromentButton';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 
@@ -17,6 +18,7 @@ export function PlantSelect() {
                 Você quer colocar sua planta?
             </Text>
             </View>
+            <EnviromentButton title="Cozinha" />
         </View>
     )
 }
